@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Loadable from 'react-loadable';
 
 import Loading from '../components/Loading/Loading';
+import Navbar from '../components/ClientNavbar/ClientNavbar';
 
 
 const Client = () => {
@@ -18,6 +19,7 @@ const Client = () => {
     
   return (
     <div>
+        <Navbar/>
         <Routes>
             <Route path="/" element={<UserLogin />} />
             <Route path="/register" element={<UserRegister />} />

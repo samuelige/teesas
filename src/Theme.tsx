@@ -8,7 +8,10 @@ interface ThemeType {
 const theme = {
     colors: {
         yellowGreen: "#A2EE08",
-        
+        darkGreen: "#4CAF50",
+        white: "#FFF",
+        black: "#343a40",
+        darkGrey: "#6c757d",
     },
     fonts: ["Poppins"],
     
