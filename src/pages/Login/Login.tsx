@@ -1,12 +1,18 @@
 import React, { useState } from 'react'
-import { Container } from './LoginStyle'
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
+import { Container } from './LoginStyle'
+
 import InputField from '../../components/Custom_InputField/InputField'
-import NextBtn from '../../components/Button/NextBtn'
+
 import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
+  const mediaMatch: MediaQueryList = window.matchMedia('(min-width: 900px)');
+  
+  console.log(mediaMatch.matches)
+
+
   const [formValue, setFormValue] = useState<Record<string,string>>({
     phone: "",
     password: "",
@@ -21,12 +27,14 @@ const Login = () => {
   }
 
   const styleInput: Record<string, any> = { 
+   
     borderRadius: "4px",
     width: "100%",
     fontSize: "16px",
     color: "#555",
     outline:" none",
-    height: "3.5vmax",
+    height: "4rem",
+    
   }
 
   const handleViewPassword = () => {
@@ -53,7 +61,10 @@ const Login = () => {
             }}
             value={formValue.phone}
             onChange={() => handleChange}
+            containerClass="my-container-class"
             inputStyle={styleInput}
+
+            // inputClass="phone-input"
           />
           <br/>
             
@@ -71,7 +82,8 @@ const Login = () => {
           <h5>Forgot Password ?</h5>
             <br/>
             <br/>
-          <NextBtn handleClckEvent={handleRoute}>Register</NextBtn>
+
+            <button onClick={handleRoute}>LOGIN</button>
         
     </Container>
   )
