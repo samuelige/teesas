@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/teesas/static/js/main.21990368.js",
-    "static/js/914.0e177f76.chunk.js": "/teesas/static/js/914.0e177f76.chunk.js",
+    "main.js": "/teesas/static/js/main.0ff9b38c.js",
+    "static/js/914.8de68646.chunk.js": "/teesas/static/js/914.8de68646.chunk.js",
     "static/css/588.51081b56.chunk.css": "/teesas/static/css/588.51081b56.chunk.css",
     "static/js/588.9f97c464.chunk.js": "/teesas/static/js/588.9f97c464.chunk.js",
     "static/js/787.f2771389.chunk.js": "/teesas/static/js/787.f2771389.chunk.js",
@@ -15,8 +15,8 @@
     "static/media/revicons.ttf": "/teesas/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/teesas/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/teesas/index.html",
-    "main.21990368.js.map": "/teesas/static/js/main.21990368.js.map",
-    "914.0e177f76.chunk.js.map": "/teesas/static/js/914.0e177f76.chunk.js.map",
+    "main.0ff9b38c.js.map": "/teesas/static/js/main.0ff9b38c.js.map",
+    "914.8de68646.chunk.js.map": "/teesas/static/js/914.8de68646.chunk.js.map",
     "588.51081b56.chunk.css.map": "/teesas/static/css/588.51081b56.chunk.css.map",
     "588.9f97c464.chunk.js.map": "/teesas/static/js/588.9f97c464.chunk.js.map",
     "787.f2771389.chunk.js.map": "/teesas/static/js/787.f2771389.chunk.js.map",
@@ -27,6 +27,6 @@
     "184.7ca86323.chunk.js.map": "/teesas/static/js/184.7ca86323.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.21990368.js"
+    "static/js/main.0ff9b38c.js"
   ]
 }
