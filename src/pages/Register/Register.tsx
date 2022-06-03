@@ -18,7 +18,7 @@ const Register = () => {
     fontSize: "16px",
     color: "#555",
     outline:" none",
-    height: "3.5vmax",
+    height: "4rem", 
   }
 
 
