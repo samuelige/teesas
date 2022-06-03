@@ -28,7 +28,7 @@ const data: DataType[] = [
     {
         id: 5,
         name: 'Login',
-        path: '/login',
+        path: '/',
     },
     {
         id: 6,

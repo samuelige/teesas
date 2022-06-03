@@ -1,5 +1,6 @@
 import { ThemeProvider } from "styled-components";
 import React, {ReactNode} from 'react';
+import { url } from "inspector";
 
 interface ThemeType {
     children: ReactNode
@@ -12,6 +13,8 @@ const theme = {
         white: "#FFF",
         black: "#343a40",
         darkGrey: "#6c757d",
+        lightGrey: "#b3aaaa",
+        lightGreen: "linear-gradient(to bottom, #edffdf 0%, #d4ffcf 100%)"
     },
     fonts: ["Poppins"],
     

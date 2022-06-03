@@ -5,7 +5,7 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.18rem 4rem;
+    padding: 0.17rem 4rem;
     background: ${(props: any) => props.theme.colors.yellowGreen};
     position: relative;
 

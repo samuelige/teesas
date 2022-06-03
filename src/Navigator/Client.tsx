@@ -7,13 +7,8 @@ import Navbar from '../components/ClientNavbar/ClientNavbar';
 
 
 const Client = () => {
-    const UserLogin = Loadable({
-        loader: () => import('../pages/Login/Login'),
-        loading: Loading,
-    })
-
-    const UserRegister = Loadable({
-        loader: () => import('../pages/Register/Register'),
+    const Home = Loadable({
+        loader: () => import('../pages/Home/Home'),
         loading: Loading,
     })
     
@@ -21,8 +16,7 @@ const Client = () => {
     <div>
         <Navbar/>
         <Routes>
-            <Route path="/" element={<UserLogin />} />
-            <Route path="/register" element={<UserRegister />} />
+            <Route path="/*" element={<Home />} />
         </Routes>
     </div>
   )
