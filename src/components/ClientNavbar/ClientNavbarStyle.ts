@@ -7,7 +7,9 @@ const Container = styled.div`
     align-items: center;
     padding: 0.17rem 4rem;
     background: ${(props: any) => props.theme.colors.yellowGreen};
-    position: relative;
+    // position: relative;
+    position: fixed;
+    z-index: 2;
 
     @media screen and (max-width: 900px) {
         padding: 1rem 0.5rem;

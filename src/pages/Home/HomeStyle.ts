@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-    padding: 4rem 3rem 4rem 6rem;
+    padding: 9rem 3rem 4rem 6rem;
     display: flex;
     justify-content: space-between;
 
     @media screen and (max-width: 900px) {
-        padding: 2rem 1rem;
+        padding: 6rem 1rem 2rem 1rem;
         flex-direction: column-reverse;
     }
 
