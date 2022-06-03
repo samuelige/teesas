@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.js": "/teesas/static/js/main.86e1794c.js",
+    "static/js/914.9f9b9fc4.chunk.js": "/teesas/static/js/914.9f9b9fc4.chunk.js",
+    "static/css/588.51081b56.chunk.css": "/teesas/static/css/588.51081b56.chunk.css",
+    "static/js/588.9f97c464.chunk.js": "/teesas/static/js/588.9f97c464.chunk.js",
+    "static/js/787.f2771389.chunk.js": "/teesas/static/js/787.f2771389.chunk.js",
+    "static/js/501.1ff641bd.chunk.js": "/teesas/static/js/501.1ff641bd.chunk.js",
+    "static/js/936.124a8568.chunk.js": "/teesas/static/js/936.124a8568.chunk.js",
+    "static/css/472.61ac337f.chunk.css": "/teesas/static/css/472.61ac337f.chunk.css",
+    "static/js/472.bbb6c5da.chunk.js": "/teesas/static/js/472.bbb6c5da.chunk.js",
+    "static/js/184.7ca86323.chunk.js": "/teesas/static/js/184.7ca86323.chunk.js",
+    "static/media/pic_1.png": "/teesas/static/media/pic_1.bf317b517e3b8dad1cf7.png",
+    "static/media/revicons.eot": "/teesas/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/teesas/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/teesas/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/teesas/index.html",
+    "main.86e1794c.js.map": "/teesas/static/js/main.86e1794c.js.map",
+    "914.9f9b9fc4.chunk.js.map": "/teesas/static/js/914.9f9b9fc4.chunk.js.map",
+    "588.51081b56.chunk.css.map": "/teesas/static/css/588.51081b56.chunk.css.map",
+    "588.9f97c464.chunk.js.map": "/teesas/static/js/588.9f97c464.chunk.js.map",
+    "787.f2771389.chunk.js.map": "/teesas/static/js/787.f2771389.chunk.js.map",
+    "501.1ff641bd.chunk.js.map": "/teesas/static/js/501.1ff641bd.chunk.js.map",
+    "936.124a8568.chunk.js.map": "/teesas/static/js/936.124a8568.chunk.js.map",
+    "472.61ac337f.chunk.css.map": "/teesas/static/css/472.61ac337f.chunk.css.map",
+    "472.bbb6c5da.chunk.js.map": "/teesas/static/js/472.bbb6c5da.chunk.js.map",
+    "184.7ca86323.chunk.js.map": "/teesas/static/js/184.7ca86323.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.86e1794c.js"
+  ]
+}
