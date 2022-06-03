@@ -1,6 +1,5 @@
 import { ThemeProvider } from "styled-components";
 import React, {ReactNode} from 'react';
-import { url } from "inspector";
 
 interface ThemeType {
     children: ReactNode
