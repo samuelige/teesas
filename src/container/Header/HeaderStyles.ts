@@ -7,10 +7,14 @@ const Container = styled.div`
     align-items: center;
     padding: 0.17rem 2rem 0.17rem 4.2rem;
     background: ${(props: any) => props.theme.colors.lightGreen};
-    position: relative; 
+    // position: relative;
+    position: fixed;
+    z-index: 2; 
 
     @media screen and (max-width: 900px) {
         padding: 1rem 0.5rem;
+        position: relative;
+        z-index: 0;
     }
     @media screen and (max-width: 550px) {
         flex-direction: column;
