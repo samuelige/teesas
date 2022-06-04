@@ -4,8 +4,7 @@ const SubHeaderContainer = styled.nav`
    display: flex;
    align-items: center;
    width: 100%;
-   
-   
+
 
     a {
         
@@ -36,6 +35,14 @@ const SubHeaderContainer = styled.nav`
         a {
             width: 100%;
             margin-left: 0.5rem;
+
+            div {
+                width: 140px;
+                height: 40px;
+                justify-content: center;
+                
+                
+            } 
         }
     }
 
