@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/teesas/static/js/main.b5bb82bc.js",
+    "main.js": "/teesas/static/js/main.a5a54ba3.js",
     "static/js/914.8de68646.chunk.js": "/teesas/static/js/914.8de68646.chunk.js",
     "static/css/588.51081b56.chunk.css": "/teesas/static/css/588.51081b56.chunk.css",
     "static/js/588.4f678d73.chunk.js": "/teesas/static/js/588.4f678d73.chunk.js",
     "static/js/787.f2771389.chunk.js": "/teesas/static/js/787.f2771389.chunk.js",
-    "static/js/501.32df9da2.chunk.js": "/teesas/static/js/501.32df9da2.chunk.js",
-    "static/js/978.1409c9a8.chunk.js": "/teesas/static/js/978.1409c9a8.chunk.js",
+    "static/js/501.408b330d.chunk.js": "/teesas/static/js/501.408b330d.chunk.js",
+    "static/js/978.b7880e66.chunk.js": "/teesas/static/js/978.b7880e66.chunk.js",
     "static/css/472.61ac337f.chunk.css": "/teesas/static/css/472.61ac337f.chunk.css",
     "static/js/472.bbb6c5da.chunk.js": "/teesas/static/js/472.bbb6c5da.chunk.js",
     "static/js/184.7ca86323.chunk.js": "/teesas/static/js/184.7ca86323.chunk.js",
@@ -15,18 +15,18 @@
     "static/media/revicons.ttf": "/teesas/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/teesas/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/teesas/index.html",
-    "main.b5bb82bc.js.map": "/teesas/static/js/main.b5bb82bc.js.map",
+    "main.a5a54ba3.js.map": "/teesas/static/js/main.a5a54ba3.js.map",
     "914.8de68646.chunk.js.map": "/teesas/static/js/914.8de68646.chunk.js.map",
     "588.51081b56.chunk.css.map": "/teesas/static/css/588.51081b56.chunk.css.map",
     "588.4f678d73.chunk.js.map": "/teesas/static/js/588.4f678d73.chunk.js.map",
     "787.f2771389.chunk.js.map": "/teesas/static/js/787.f2771389.chunk.js.map",
-    "501.32df9da2.chunk.js.map": "/teesas/static/js/501.32df9da2.chunk.js.map",
-    "978.1409c9a8.chunk.js.map": "/teesas/static/js/978.1409c9a8.chunk.js.map",
+    "501.408b330d.chunk.js.map": "/teesas/static/js/501.408b330d.chunk.js.map",
+    "978.b7880e66.chunk.js.map": "/teesas/static/js/978.b7880e66.chunk.js.map",
     "472.61ac337f.chunk.css.map": "/teesas/static/css/472.61ac337f.chunk.css.map",
     "472.bbb6c5da.chunk.js.map": "/teesas/static/js/472.bbb6c5da.chunk.js.map",
     "184.7ca86323.chunk.js.map": "/teesas/static/js/184.7ca86323.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.b5bb82bc.js"
+    "static/js/main.a5a54ba3.js"
   ]
 }
