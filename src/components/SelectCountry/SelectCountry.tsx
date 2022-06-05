@@ -1,18 +1,23 @@
 
-import React, { useEffect, useState } from 'react'
+import React, { ChangeEventHandler, useEffect, useState } from 'react'
 import { AiOutlineAim } from "react-icons/ai";
 import { SelectContainer } from './SelectStyles';
 
-const SelectCountry = () => {
+type Props = {
+    value: string | number,
+    name: string,
+    handleChange: ChangeEventHandler<HTMLSelectElement>;
+}
+
+const SelectCountry = ({name, value, handleChange} : Props) => {
     const [countries, setCountries] = useState<Record<string,string>[]>([])
     
     useEffect(() =>{
         const data = require('./CountryData.json')
-        console.log(data)
         setCountries(data)
     },[])
   return (
-    <SelectContainer>
+    <SelectContainer name={name} value={value} onChange={handleChange}>
         <option value=''>--Select Country--</option>
         {
             countries.map((item) =>{

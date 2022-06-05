@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { ChangeEvent, Fragment, useState } from 'react'
 import NextBtn from '../../components/Button/NextBtn'
 import CustomRadioButton from '../../components/CustomRadioButton/CustomRadioButton'
 import InputField from '../../components/Custom_InputField/InputField'
@@ -7,8 +7,6 @@ import { Container, Footer, FormSection, Section, Select } from './RegisterStyle
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import { useNavigate } from 'react-router-dom'
-
-
 
 const Register = () => {
 
@@ -23,10 +21,9 @@ const Register = () => {
 
 
   const [count, setCount] = useState<number>(1);
-
-  const [viewPassword, setViewPassword] = useState<boolean>(false)
   
   const [formValue, setFormValue] = useState<Record<string,string>>({
+    country: "",
     phone: "",
     radio: "",
     fullName: "",
@@ -43,7 +40,7 @@ const Register = () => {
         navigate('/dashboard');
     }
 
-    const handleChange = (e: any) => {
+    const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
       const getValue = {...formValue}
       getValue[e.target.name] = e.target.value
       setFormValue(getValue)
@@ -65,23 +62,16 @@ const Register = () => {
         setCount((previousState) => previousState - 1); 
     }
 
-    const handleViewPassword = () => {
-        setViewPassword(true);
-    }
-
   
   return (
     <Container>
       <h3>Register</h3>
-
-
-
       {
         count === 1 && (
           <Fragment>
             <Select>
               <label>Select Your Country</label>
-              <SelectCountry />
+              <SelectCountry name="country" value={formValue.country} handleChange={handleChange} />
             </Select>
 
             <Section>
@@ -154,7 +144,7 @@ const Register = () => {
                 required: true,
               }}
               value={formValue.phone}
-              onChange={() => handleChange}
+              onChange={(phone: string) => setFormValue({...formValue, phone})}
               inputStyle={styleInput}
             />
             <div className='meta'/>
@@ -167,13 +157,12 @@ const Register = () => {
             />
             <div className='meta'/>
             <InputField
-              type={viewPassword ? 'text' : 'password'}
+              type= 'password'
               name="password"
               placeholder="Password"
               handleChange={handleChange}
               value={formValue.password}
               setIcon={true}
-              handleClick={() => handleViewPassword}
             />
           </FormSection>
         )

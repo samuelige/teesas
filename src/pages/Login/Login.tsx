@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { ChangeEvent, useState } from 'react'
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import { Container } from './LoginStyle'
@@ -8,19 +8,13 @@ import InputField from '../../components/Custom_InputField/InputField'
 import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
-  const mediaMatch: MediaQueryList = window.matchMedia('(min-width: 900px)');
-  
-  console.log(mediaMatch.matches)
-
 
   const [formValue, setFormValue] = useState<Record<string,string>>({
     phone: "",
     password: "",
   })
 
-  const [viewPassword, setViewPassword] = useState<boolean>(false)
-
-  const handleChange = (e: any) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const getValue = {...formValue}
     getValue[e.target.name] = e.target.value
     setFormValue(getValue)
@@ -37,53 +31,47 @@ const Login = () => {
     
   }
 
-  const handleViewPassword = () => {
-    setViewPassword(true);
-  }
-
   let navigate = useNavigate();
-    
-  const handleRoute = () : any => {
+
+  const handleRoute = () : void => {
       navigate('/dashboard');
   }
 
   return (
     <Container>
+      <h3>Let's Get Started</h3>
+        <br/>
+      <PhoneInput
+        country={"ng"}
+        inputProps={{
+          name: "phone",
+          country: "ng",
+          required: true,
+        }}
+        value={formValue.phone}
+        onChange={(phone: string) => setFormValue({...formValue, phone})}
+        containerClass="my-container-class"
+        inputStyle={styleInput}
+      />
 
-          <h3>Let's Get Started</h3>
-            <br/>
-          <PhoneInput
-            country={"ng"}
-            inputProps={{
-              name: "phone",
-              country: "ng",
-              required: true,
-            }}
-            value={formValue.phone}
-            onChange={() => handleChange}
-            containerClass="my-container-class"
-            inputStyle={styleInput}
+      <br/>
+        
+      <InputField
+        type='password'
+        name="password"
+        placeholder="Password"
+        handleChange={handleChange}
+        value={formValue.password}
+        setIcon={true}
+      />
 
-            // inputClass="phone-input"
-          />
-          <br/>
-            
-          <div className='meta'/>
-            <InputField
-              type={viewPassword ? 'text' : 'password'}
-              name="password"
-              placeholder="Password"
-              handleChange={handleChange}
-              value={formValue.password}
-              setIcon={true}
-              handleClick={() => handleViewPassword}
-            />
-            <br/>
-          <h5>Forgot Password ?</h5>
-            <br/>
-            <br/>
+      <br/>
 
-            <button onClick={handleRoute}>LOGIN</button>
+      <h5>Forgot Password ?</h5>
+      <br/>
+      <br/>
+
+      <button onClick={handleRoute}>LOGIN</button>
         
     </Container>
   )
